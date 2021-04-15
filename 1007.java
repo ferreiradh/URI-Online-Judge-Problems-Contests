@@ -4,11 +4,11 @@ public class Main {
  
     public static void main(String[] args) {
  
-        Scanner leitor = new Scanner(System.in);
-        int a = leitor.nextInt();
-        int b = leitor.nextInt();
-        int c = leitor.nextInt();
-        int d = leitor.nextInt();
+        Scanner scanf = new Scanner(System.in);
+        int a = scanf.nextInt();
+        int b = scanf.nextInt();
+        int c = scanf.nextInt();
+        int d = scanf.nextInt();
         int diferenca = a * b - c * d;
         System.out.printf("DIFERENCA = %d\n", diferenca);
  
