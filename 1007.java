@@ -10,7 +10,7 @@ public class Main {
         int c = leitor.nextInt();
         int d = leitor.nextInt();
         int diferenca = a * b - c * d;
-        System.out.println("DIFERENCA = " + diferenca);
+        System.out.printf("DIFERENCA = %d\n", diferenca);
  
     }
  
