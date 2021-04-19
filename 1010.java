@@ -5,8 +5,6 @@ public class Main {
     public static void main(String[] args) {
  
         Scanner scanf = new Scanner(System.in);      
-        
-
 
         int cod1 = scanf.nextInt();
         int n1 = scanf.nextInt();
