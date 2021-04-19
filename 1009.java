@@ -6,8 +6,6 @@ public class Main {
  
         Scanner scanf = new Scanner(System.in);      
         
-
-
         String nome = scanf.nextLine();
         double salarioFixo = scanf.nextDouble();
         double vendas = scanf.nextDouble();
