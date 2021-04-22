@@ -28,7 +28,7 @@ int main(){
         total = qtd * 1.5;
     }
 
-    printf("Total: R$ %0.2f\n", total);
+    printf("Total: R$ %.2f\n", total);
 
     return 0;
 

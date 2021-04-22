@@ -16,8 +16,8 @@ int main(){
     x1 = (-b + sqrt(delta)) / (2*a);
     x2 = (-b - sqrt(delta)) / (2*a);    
 
-    printf("R1 = %0.5lf\n", x1);
-    printf("R2 = %0.5lf\n", x2);
+    printf("R1 = %.5lf\n", x1);
+    printf("R2 = %.5lf\n", x2);
     }
 
     return 0;
