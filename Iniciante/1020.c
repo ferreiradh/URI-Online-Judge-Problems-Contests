@@ -2,19 +2,13 @@
  
 int main(){
     
-    int idadeD, dia, mes, ano; 
+    int idadeD; 
  
     scanf("%d", &idadeD);
     
-    ano = idadeD / 365;
-    idadeD -= ano * 365;
-    mes = idadeD / 30;
-    idadeD -= mes * 30;
-    dia = idadeD;
-    
-	printf("%d ano(s)\n", ano);
-	printf("%d mes(es)\n", mes);
-	printf("%d dia(s)\n", dia);
+	printf("%d ano(s)\n", idadeD / 365); idadeD = idadeD % 365;
+	printf("%d mes(es)\n", idadeD / 30); idadeD = idadeD % 30;
+	printf("%d dia(s)\n", idadeD);
  
     return 0;
 }
