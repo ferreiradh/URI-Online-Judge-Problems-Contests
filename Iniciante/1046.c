@@ -19,6 +19,7 @@ int main(){
             printf("O JOGO DUROU 24 HORA(S)\n");
         }
     }
+    
     return 0;
 
 }

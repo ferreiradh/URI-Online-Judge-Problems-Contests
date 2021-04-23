@@ -2,38 +2,24 @@
 
 int main(){
 
-    int horaInicial, minutoInicial, horaFinal, minutoFinal, somaInicial, somaFinal, dif, horaDif, minDif;
+    int horaInicial, minutoInicial, horaFinal, minutoFinal, somaInicial, somaFinal, dif;
 
     scanf("%d %d %d %d", &horaInicial, &minutoInicial, &horaFinal, &minutoFinal);
-
-    horaInicial = horaInicial * 60;
-    horaFinal = horaFinal * 60;
-    somaInicial = horaInicial + minutoInicial;
-    somaFinal = horaFinal + minutoFinal;
-
-     if(somaInicial < somaFinal){
-
-        dif = somaFinal - somaInicial;
-
-        horaDif = dif / 60;
-        minDif = dif % 60;
-
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horaDif, minDif);
-     }else{
-
-    if(somaInicial > somaFinal){
-
-        dif = (1440 - somaInicial) + somaFinal;
-
-        horaDif = dif / 60;
-        minDif = dif % 60;
-
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horaDif, minDif);
-    }else{
-
-        printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
-    }
-    }
+    
+    somaInicial = minutoInicial + (horaInicial * 60);
+    somaFinal = minutoFinal + (horaFinal * 60);
+    
+    	if(somaInicial < somaFinal){    	
+    	dif = somaFinal - somaInicial;
+    	printf("O JOGO DUROU %d HORA(S) E ", dif / 60); dif = dif % 60;
+    	printf("%d MINUTO(S)\n", dif);
+    	
+	}else if(somaInicial > somaFinal){
+		dif = (1440 - somaInicial) + somaFinal;
+		printf("O JOGO DUROU %d HORA(S) E ", dif / 60); dif = dif % 60;
+    	printf("%d MINUTO(S)\n", dif);
+    	
+	}else printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
 
     return 0;
 
